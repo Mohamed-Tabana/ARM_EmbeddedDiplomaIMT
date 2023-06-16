@@ -1,0 +1,4 @@
+../Src/HAL/IR/IR_PRG.c:19:6:ParseFrame	24	static
+../Src/HAL/IR/IR_PRG.c:39:6:GetFrame	8	static
+../Src/HAL/IR/IR_PRG.c:59:6:IR_Init	8	static
+../Src/HAL/IR/IR_PRG.c:69:9:IR_GetPressedKey	0	static

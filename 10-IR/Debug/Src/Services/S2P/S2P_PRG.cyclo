@@ -1,0 +1,4 @@
+S2P_PRG.c:15:6:S2P_vInit	1
+S2P_PRG.c:24:13:ShiftData	1
+S2P_PRG.c:32:13:LatchData	1
+S2P_PRG.c:40:6:S2P_vSendData	2

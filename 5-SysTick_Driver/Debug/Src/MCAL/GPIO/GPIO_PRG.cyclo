@@ -1,0 +1,10 @@
+GPIO_PRG.c:11:6:MGPIO_Init	1
+GPIO_PRG.c:23:6:MGPIO_vSetPinType	7
+GPIO_PRG.c:53:6:MGPIO_vSetOutputPinType	7
+GPIO_PRG.c:83:6:MGPIO_vSetOutputPinSpeed	7
+GPIO_PRG.c:115:6:MGPIO_vSetInputPinPullUpDown	7
+GPIO_PRG.c:146:10:MGPIO_vReadInputPinValue	7
+GPIO_PRG.c:172:6:MGPIO_vSetOutputPinValue	7
+GPIO_PRG.c:203:6:MGPIO_vSetOutputPinValueBSR	19
+GPIO_PRG.c:265:6:MGPIO_vSetPinLockSTS	7
+GPIO_PRG.c:296:6:MGPIO_vSetPinAlternativeFunction	13

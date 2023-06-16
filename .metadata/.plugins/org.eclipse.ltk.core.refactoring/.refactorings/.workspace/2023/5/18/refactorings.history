@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;9-DAC/sound.h&apos;" deleteContents="false" description="Delete resource &apos;9-DAC/sound.h&apos;" element1="/9-DAC/sound.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1683280531884"/>&#x0A;<refactoring comment="Delete resource &apos;9-DAC/Src/MCAL/DAC&apos;" deleteContents="false" description="Delete resource &apos;9-DAC/Src/MCAL/DAC&apos;" element1="/9-DAC/Src/MCAL/DAC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1683287223392"/>
+</session>

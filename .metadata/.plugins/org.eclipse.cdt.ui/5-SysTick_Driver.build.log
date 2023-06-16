@@ -1,0 +1,10 @@
+23:32:52 **** Incremental Build of configuration Debug for project 5-SysTick_Driver ****
+make -j8 all 
+arm-none-eabi-size   5-SysTick_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+    728	      8	   1632	   2368	    940	5-SysTick_Driver.elf
+Finished building: default.size.stdout
+ 
+
+23:32:52 Build Finished. 0 errors, 0 warnings. (took 241ms)
+

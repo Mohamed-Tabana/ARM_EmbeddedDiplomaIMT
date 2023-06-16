@@ -1,0 +1,17 @@
+15:43:42 **** Incremental Build of configuration Debug for project 11-SPI ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/MCAL/SPI/SPI_prg.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401CCUx -DSTM32 -DSTM32F4 -c -I../Inc -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/HAL/DAC" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/HAL/IR" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/HAL/LEDMatrix" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/HAL/Segment" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/Kernel" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/EXTI" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/Flash" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/GPIO" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/NVIC" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/RCC" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/SPI" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/SysTick" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/UART" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/Services/S2P" -I"D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/MCAL/SPI/SPI_prg.d" -MT"Src/MCAL/SPI/SPI_prg.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/MCAL/SPI/SPI_prg.o"
+arm-none-eabi-gcc -o "11-SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\11-SPI\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11-SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 11-SPI.elf
+ 
+arm-none-eabi-size   11-SPI.elf 
+arm-none-eabi-objdump -h -S  11-SPI.elf  > "11-SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+   4704	      8	   1640	   6352	   18d0	11-SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: 11-SPI.list
+ 
+
+15:43:43 Build Finished. 0 errors, 0 warnings. (took 642ms)
+

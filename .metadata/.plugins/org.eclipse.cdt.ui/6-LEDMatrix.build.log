@@ -1,0 +1,10 @@
+23:32:52 **** Incremental Build of configuration Debug for project 6-LEDMatrix ****
+make -j8 all 
+arm-none-eabi-size   6-LEDMatrix.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4452	    188	   1628	   6268	   187c	6-LEDMatrix.elf
+Finished building: default.size.stdout
+ 
+
+23:32:53 Build Finished. 0 errors, 0 warnings. (took 308ms)
+

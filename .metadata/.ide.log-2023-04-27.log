@@ -1,0 +1,9 @@
+2023-04-27 10:57:06,159 [INFO] MainUpdater:2854 - connection check result : 10
+2023-04-27 10:57:06,515 [INFO] McuFinderGlobals:66 - Set McuFinderConnectedMode to true
+2023-04-27 10:57:06,525 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-04-27 10:57:06,530 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2023-04-27 10:57:07,893 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2023-04-27 10:57:07,893 [INFO] DetailPanel:341 - Set advertising image to C:/Users/ALTAWKEL/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-04-27 10:57:41,190 [INFO] McuFinderGlobals:66 - Set McuFinderConnectedMode to true
+2023-04-27 10:57:41,190 [INFO] ApiDb:448 - Save user favorites file C:\Users\ALTAWKEL/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-04-27 10:57:41,198 [INFO] ApiDb:452 - User favorites MCUs=[]

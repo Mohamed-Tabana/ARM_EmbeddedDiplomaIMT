@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;11-SPI/Src/MCAL/SPI/SPI_prg&apos; to &apos;SPI_prg.c&apos;" description="Rename resource &apos;SPI_prg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/MCAL/SPI/SPI_prg" name="SPI_prg.c" stamp="1686872710698" updateReferences="true"/>
+</session>

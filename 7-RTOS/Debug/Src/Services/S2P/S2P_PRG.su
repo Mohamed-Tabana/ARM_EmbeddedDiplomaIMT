@@ -1,0 +1,4 @@
+../Src/Services/S2P/S2P_PRG.c:15:6:S2P_vInit	8	static
+../Src/Services/S2P/S2P_PRG.c:24:13:ShiftData	8	static
+../Src/Services/S2P/S2P_PRG.c:32:13:LatchData	8	static
+../Src/Services/S2P/S2P_PRG.c:40:6:S2P_vSendData	24	static

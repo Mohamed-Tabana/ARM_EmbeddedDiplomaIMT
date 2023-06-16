@@ -1,0 +1,17 @@
+06:42:15 **** Incremental Build of configuration Debug for project GPIO-driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/HAL/Segment.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401CCUx -DSTM32 -DSTM32F4 -c -I../Inc -I"D:/IMT_ARM/STM32F104_BlackPill/GPIO-driver" -I"D:/IMT_ARM/STM32F104_BlackPill/GPIO-driver/Src" -I"D:/IMT_ARM/STM32F104_BlackPill/GPIO-driver/Src/MCAL" -I"D:/IMT_ARM/STM32F104_BlackPill/GPIO-driver/Src/MCAL/RCC" -I"D:/IMT_ARM/STM32F104_BlackPill/GPIO-driver/Src/MCAL/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/HAL/Segment.d" -MT"Src/HAL/Segment.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/HAL/Segment.o"
+arm-none-eabi-gcc -o "GPIO-driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\GPIO-driver\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO-driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO-driver.elf
+ 
+arm-none-eabi-size   GPIO-driver.elf 
+arm-none-eabi-objdump -h -S  GPIO-driver.elf  > "GPIO-driver.list"
+   text	   data	    bss	    dec	    hex	filename
+   1960	      8	   1568	   3536	    dd0	GPIO-driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO-driver.list
+ 
+
+06:42:16 Build Finished. 0 errors, 0 warnings. (took 437ms)
+

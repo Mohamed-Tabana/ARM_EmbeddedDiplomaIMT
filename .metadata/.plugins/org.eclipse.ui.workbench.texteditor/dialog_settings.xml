@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="RX_Buffer"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="RX_Buffer"/>
+			<item value="A_pu16Data"/>
+			<item value="A_u16Length"/>
+			<item value="A_u32Address"/>
+			<item value="84"/>
+			<item value="_BIT"/>
+			<item value="GPIO_BS_t"/>
+			<item value="GPIO_LCK_t"/>
+			<item value="GPIO_ODR_t"/>
+			<item value="|"/>
+			<item value="copy_GPIO_ODR"/>
+			<item value="Local_u8firstTimeFlag"/>
+			<item value="Local_u8counter"/>
+			<item value="copy_u32numer"/>
+			<item value="MGPIO_vSetOutputPortValue"/>
+		</list>
+		<list key="replacehistory">
+			<item value="copy_pu16Data"/>
+			<item value="copy_u32Size"/>
+			<item value="copy_u32Address"/>
+			<item value=""/>
+			<item value="^"/>
+			<item value="1"/>
+			<item value="Global_u8firstTimeFlag"/>
+			<item value="Global_u8counter"/>
+			<item value="copy_u8number"/>
+			<item value=",.PIN_OValue=1},"/>
+			<item value="255"/>
+			<item value="0"/>
+			<item value="_"/>
+			<item value="copy_u8"/>
+			<item value="u8"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="709"/>
+		<item key="DIALOG_Y_ORIGIN" value="585"/>
+		<item key="DIALOG_WIDTH" value="414"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

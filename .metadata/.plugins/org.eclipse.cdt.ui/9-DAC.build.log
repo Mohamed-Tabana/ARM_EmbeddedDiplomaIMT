@@ -1,0 +1,10 @@
+23:32:54 **** Incremental Build of configuration Debug for project 9-DAC ****
+make -j8 all 
+arm-none-eabi-size   9-DAC.elf 
+   text	   data	    bss	    dec	    hex	filename
+    784	      8	   1640	   2432	    980	9-DAC.elf
+Finished building: default.size.stdout
+ 
+
+23:32:54 Build Finished. 0 errors, 0 warnings. (took 302ms)
+

@@ -1,0 +1,3 @@
+FMI_PRG.c:12:6:FMI_vFlashEraseSector	4
+FMI_PRG.c:39:6:FMI_vFlashEraseMass	4
+FMI_PRG.c:61:6:FMI_vFlashWrite	5

@@ -1,0 +1,17 @@
+/*
+ * FMI_PRG.c
+ *
+ *  Created on: May 12, 2023
+ *      Author: ALTAWKEL
+ */
+
+
+#include "FMI_Interface.h"
+
+
+void FMI_vFlashEraseSector(FMI_Sector_t copy_eFMI_Sector)
+{
+
+}
+void FMI_vFlashEraseMass();
+void FMI_vFlashWrite(uint32_t copy_u32Address, uint16_t* copy_pu16Data, uint32_t copy_u32Size);

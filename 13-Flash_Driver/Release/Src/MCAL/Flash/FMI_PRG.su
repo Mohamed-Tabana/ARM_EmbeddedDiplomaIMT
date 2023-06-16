@@ -1,0 +1,3 @@
+../Src/MCAL/Flash/FMI_PRG.c:12:6:FMI_vFlashEraseSector	0	static
+../Src/MCAL/Flash/FMI_PRG.c:39:6:FMI_vFlashEraseMass	0	static
+../Src/MCAL/Flash/FMI_PRG.c:61:6:FMI_vFlashWrite	12	static

@@ -1,0 +1,6 @@
+../Src/Kernel/Kernel_PRG.c:12:6:Kernel_vInit	16	static
+../Src/Kernel/Kernel_PRG.c:17:6:Kernel_Scheduler	16	static
+../Src/Kernel/Kernel_PRG.c:41:9:Kernel_vCreateTask	32	static
+../Src/Kernel/Kernel_PRG.c:71:6:Kernel_vPauseTask	16	static
+../Src/Kernel/Kernel_PRG.c:76:6:Kernel_vResumeTask	16	static
+../Src/Kernel/Kernel_PRG.c:81:6:Kernel_vDeleteTask	16	static

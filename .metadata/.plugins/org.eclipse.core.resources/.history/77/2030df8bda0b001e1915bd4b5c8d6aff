@@ -1,0 +1,19 @@
+
+#include "SPI_int.h"
+#include "Utils.h"
+
+void SPI_vInit()
+{
+	/*1- CPHA and CPOL CFG*/
+	SET_BIT();
+
+}
+uint16_t SPI_Transceiving(uint16_t copy_u16Data)
+{
+
+	while(READ_BIT(SPI->SPI_SR,BSY));
+	SPI->SPI_DR=copy_u16Data;
+	while(READ_BIT(SPI->SPI_SR,BSY));
+
+	return SPI->SPI_DR;
+}

@@ -1,0 +1,14 @@
+/*
+ * HexParser_Interface.h
+ *
+ *  Created on: May 12, 2023
+ *      Author: ALTAWKEL
+ */
+
+#ifndef APP_HEXPARSER_INTERFACE_H_
+#define APP_HEXPARSER_INTERFACE_H_
+
+#include "stdio.h"
+#include "Utils.h"
+
+#endif /* APP_HEXPARSER_INTERFACE_H_ */

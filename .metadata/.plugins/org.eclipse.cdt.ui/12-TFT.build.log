@@ -1,0 +1,17 @@
+20:03:07 **** Incremental Build of configuration Debug for project 12-TFT ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/HAL/TFT/ImageArray.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401CCUx -DSTM32 -DSTM32F4 -c -I../Inc -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/Services/S2P" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/App" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/HAL/DAC" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/HAL/IR" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/HAL/LEDMatrix" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/HAL/Segment" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/HAL/TFT" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/Kernel" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/EXTI" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/Flash" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/GPIO" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/NVIC" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/RCC" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/SPI" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/SysTick" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src/MCAL/UART" -I"D:/IMT_ARM/STM32F104_BlackPill/12-TFT/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/HAL/TFT/ImageArray.d" -MT"Src/HAL/TFT/ImageArray.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/HAL/TFT/ImageArray.o"
+arm-none-eabi-gcc -o "12-TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\12-TFT\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12-TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 12-TFT.elf
+ 
+arm-none-eabi-size   12-TFT.elf 
+arm-none-eabi-objdump -h -S  12-TFT.elf  > "12-TFT.list"
+   text	   data	    bss	    dec	    hex	filename
+   5304	  40992	   1640	  47936	   bb40	12-TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 12-TFT.list
+ 
+
+20:03:08 Build Finished. 0 errors, 0 warnings. (took 704ms)
+

@@ -1,0 +1,10 @@
+23:32:50 **** Incremental Build of configuration Release for project 13-Flash_Driver ****
+make -j8 all 
+arm-none-eabi-size   13-Flash_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+    912	      8	   1640	   2560	    a00	13-Flash_Driver.elf
+Finished building: default.size.stdout
+ 
+
+23:32:50 Build Finished. 0 errors, 0 warnings. (took 304ms)
+

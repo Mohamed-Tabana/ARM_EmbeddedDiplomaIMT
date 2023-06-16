@@ -1,0 +1,7 @@
+../Src/MCAL/NVIC/NVIC_PRG.c:12:6:NVIC_vSetInterruptEnable	0	static
+../Src/MCAL/NVIC/NVIC_PRG.c:16:6:NVIC_vClearInterruptEnable	0	static
+../Src/MCAL/NVIC/NVIC_PRG.c:21:6:NVIC_vSetInterruptPending	0	static
+../Src/MCAL/NVIC/NVIC_PRG.c:26:6:NVIC_vClearInterruptPending	0	static
+../Src/MCAL/NVIC/NVIC_PRG.c:31:9:NVIC_eReadInterruptActive	8	static
+../Src/MCAL/NVIC/NVIC_PRG.c:35:6:NVIC_vSetInterruptPriorityCFG	0	static
+../Src/MCAL/NVIC/NVIC_PRG.c:40:6:NVIC_vSetInterruptPriority	8	static

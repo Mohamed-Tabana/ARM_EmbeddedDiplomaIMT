@@ -1,0 +1,65 @@
+/*
+ * FMI_Private.h
+ *
+ *  Created on: May 12, 2023
+ *      Author: ALTAWKEL
+ */
+
+#ifndef MCAL_FLASH_FMI_PRIVATE_H_
+#define MCAL_FLASH_FMI_PRIVATE_H_
+#include "Utils.h"
+#include "stdio.h"
+
+typedef struct {
+	volatile uint32_t FLASH_ACR;
+	volatile uint32_t FLASH_KEYR;
+	volatile uint32_t FLASH_OPTKEYR;
+	volatile uint32_t FLASH_SR;
+	volatile uint32_t FLASH_CR;
+	volatile uint32_t FLASH_OPTCR;
+
+}FMI_RegDef_t;
+
+#define FMI_BASE_ADDRESS				 0x40023C00UL
+#define FMI				 				 ((volatile FMI_RegDef_t*)(FMI_BASE_ADDRESS))
+
+#define FMI_KEY1  0x45670123
+#define FMI_KEY2  0xCDEF89AB
+
+enum {
+    ACR_PRFTEN = 0,
+    ACR_LATENCY = 1,
+    SR_BSY = 0,
+    SR_EOP = 1,
+    SR_PGERR = 2,
+    SR_WRPRTERR = 4,
+    SR_PGAERR = 5,
+    CR_PG = 0,
+    CR_PER = 1,
+    CR_MER = 2,
+    CR_STRT = 3,
+    CR_EOPIE = 4,
+    CR_ERRIE = 5,
+    CR_LOCK = 7,
+    CR_OPTLOCK = 8,
+    CR_OPTSTRT = 9,
+    CR_OPTER = 10,
+    CR_OPTPG = 11,
+    OPTCR_OPTSTRT = 1,
+    OPTCR_OPTLOCK = 2,
+    OPTCR_BOR_LEV0 = 2,
+    OPTCR_BOR_LEV1 = 3,
+    OPTCR_RDP0 = 8,
+    OPTCR_RDP1 = 9,
+    OPTCR_RDP2 = 10,
+    OPTCR_RDP3 = 11,
+    OPTCR1_BOOT_ADD0 = 0,
+    OPTCR1_BOOT_ADD1 = 1
+} ;
+
+
+
+
+
+
+#endif /* MCAL_FLASH_FMI_PRIVATE_H_ */

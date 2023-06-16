@@ -1,0 +1,6 @@
+"./Src/MCAL/RCC/RCC_PRG.o"
+"./Src/MCAL/RCC_PRG.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f401ccux.o"

@@ -1,0 +1,20 @@
+/*
+ * FMI_Interface.h
+ *
+ *  Created on: May 12, 2023
+ *      Author: ALTAWKEL
+ */
+
+#ifndef MCAL_FLASH_FMI_INTERFACE_H_
+#define MCAL_FLASH_FMI_INTERFACE_H_
+
+
+
+void FMI_vFlashEraseSector(uint32_t copy_u32Address);
+
+void FMI_vFlashEraseMass();
+void FMI_vFlashWrite(uint32_t copy_u32Address,
+					 uint16_t* copy_pu16Data,
+					 uint32_t copy_u32Size);
+
+#endif /* MCAL_FLASH_FMI_INTERFACE_H_ */

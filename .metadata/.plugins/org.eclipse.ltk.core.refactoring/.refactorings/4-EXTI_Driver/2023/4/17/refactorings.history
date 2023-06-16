@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;4-EXTI_Driver/Src/MCAL/EXTI/ EXTI_Interface.h&apos; to &apos;EXTI_Interface.h&apos;" description="Rename resource &apos; EXTI_Interface.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/MCAL/EXTI/ EXTI_Interface.h" name="EXTI_Interface.h" stamp="1682278506907" updateReferences="true"/>
+</session>

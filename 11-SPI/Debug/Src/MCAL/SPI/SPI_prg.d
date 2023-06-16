@@ -1,0 +1,16 @@
+Src/MCAL/SPI/SPI_prg.o: ../Src/MCAL/SPI/SPI_prg.c \
+ ../Src/MCAL/SPI/SPI_int.h ../Src/MCAL/SPI/SPI_prv.h \
+ D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/Utils.h \
+ D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/RCC/RCC_Interface.h \
+ D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/RCC/RCC_Private.h \
+ D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/GPIO/GPIO_Interface.h \
+ D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/GPIO/GPIO_Private.h \
+ D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/GPIO/GPIO_CFG.h
+../Src/MCAL/SPI/SPI_int.h:
+../Src/MCAL/SPI/SPI_prv.h:
+D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/Utils.h:
+D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/RCC/RCC_Interface.h:
+D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/RCC/RCC_Private.h:
+D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/GPIO/GPIO_Interface.h:
+D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/GPIO/GPIO_Private.h:
+D:/IMT_ARM/STM32F104_BlackPill/11-SPI/Src/MCAL/GPIO/GPIO_CFG.h:

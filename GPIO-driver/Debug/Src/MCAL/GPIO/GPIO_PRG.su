@@ -1,0 +1,9 @@
+../Src/MCAL/GPIO/GPIO_PRG.c:12:6:MGPIO_vSetPinType	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:42:6:MGPIO_vSetOutputPinType	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:72:6:MGPIO_vSetOutputPinSpeed	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:104:6:MGPIO_vSetInputPinPullUpDown	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:135:10:MGPIO_vReadInputPinValue	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:161:6:MGPIO_vSetOutputPinValue	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:192:6:MGPIO_vSetOutputPinValueBSR	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:254:6:MGPIO_vSetPinLockSTS	16	static
+../Src/MCAL/GPIO/GPIO_PRG.c:285:6:MGPIO_vSetPinAlternativeFunction	16	static
