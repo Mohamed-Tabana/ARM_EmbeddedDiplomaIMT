@@ -1,20 +1,6 @@
-12:54:39 **** Incremental Build of configuration Release for project 14-Bootloader ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32F401CCUx -DSTM32 -DSTM32F4 -c -I../Inc -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/MCAL/UART" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/App" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/HAL/DAC" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/HAL/IR" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/HAL/LEDMatrix" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/HAL/Segment" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/Kernel" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/MCAL/EXTI" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/MCAL/Flash" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/MCAL/GPIO" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/MCAL/NVIC" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/MCAL/RCC" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/MCAL/SysTick" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/Services" -I"D:/IMT_ARM/STM32F104_BlackPill/14-Bootloader/Src/Services/S2P" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "14-Bootloader.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\14-Bootloader\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14-Bootloader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 14-Bootloader.elf
- 
-arm-none-eabi-size   14-Bootloader.elf 
-arm-none-eabi-objdump -h -S  14-Bootloader.elf  > "14-Bootloader.list"
-arm-none-eabi-objcopy  -O ihex  14-Bootloader.elf  "14-Bootloader.hex"
-   text	   data	    bss	    dec	    hex	filename
-   2848	      8	   1896	   4752	   1290	14-Bootloader.elf
-Finished building: default.size.stdout
- 
-Finished building: 14-Bootloader.hex
-Finished building: 14-Bootloader.list
- 
- 
+16:03:04 **** Building Selected Files of configuration Release for project 14-Bootloader ****
+Info: Internal Builder is used for build
+arm-none-eabi-gcc "..\\Src\\main.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32F401CCUx -DSTM32 -DSTM32F4 -c -I../Inc "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\MCAL\\UART" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\App" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\HAL\\DAC" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\HAL\\IR" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\HAL\\LEDMatrix" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\HAL\\Segment" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\Kernel" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\MCAL\\EXTI" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\MCAL\\Flash" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\MCAL\\GPIO" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\MCAL\\NVIC" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\MCAL\\RCC" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\MCAL\\SysTick" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\Services" "-ID:\\IMT_ARM\\STM32F104_BlackPill\\14-Bootloader\\Src\\Services\\S2P" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src\\main.o" 
 
-12:54:39 Build Finished. 0 errors, 0 warnings. (took 631ms)
+16:03:04 Build Finished. 0 errors, 0 warnings. (took 281ms)
 

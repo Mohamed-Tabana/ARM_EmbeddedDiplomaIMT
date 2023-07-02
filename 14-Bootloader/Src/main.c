@@ -17,8 +17,6 @@
  */
 
 #include <stdint.h>
-
-
 #include "HexParser_Interface.h"
 #include "FMI_Interface.h"
 #include "RCC_Interface.h"
@@ -26,10 +24,10 @@
 #include "SysTick_Interface.h"
 #include "UART_Interface.h"
 
+
+#define SCB_VTOR   *((volatile uint32_t*)(0xE000ED00+0x08))
 typedef void (*pFUNC_t)(void);
 pFUNC_t APP;
-#define SCB_VTOR   *((volatile uint32_t*)(0xE000ED00+0x08))
-
 uint8_t TimeoutFlag = 0 ;
 uint8_t Global_UARTFlagStatus = 0 ;
 char RX_Buffer[50] ;
@@ -39,8 +37,8 @@ uint8_t Global_EraseFlag = 0 ;
 void SysTick_Func()
 {
 	TimeoutFlag = 1 ;
-	SCB_VTOR = 0x08004000 ;
-	APP = (pFUNC_t) 0x08004004;
+	SCB_VTOR = 0x08004000 ; // first vector in BTLD Code
+	APP = (pFUNC_t) 0x08004004; // considered APP as a function
 	APP();
 }
 int main(void)
@@ -48,8 +46,8 @@ int main(void)
 	FMI_vInit();
 	MSTK_vInit();
 	MSTK_vSetIntervalSingle(30000000,SysTick_Func);
-	GPIO_CFG_t UART_TX_pin = {.PIN_Port = PORTA,.PIN_Number=PIN9,.PIN_AF=AF7,.PIN_OSpeed=MEDIUM_SPEED,.PIN_OSpeed=PUSH_PULL};
-	GPIO_CFG_t UART_RX_pin = {.PIN_Port = PORTA,.PIN_Number=PIN10,.PIN_AF=AF7,.PIN_OSpeed=MEDIUM_SPEED,.PIN_OSpeed=PUSH_PULL};
+	GPIO_CFG_t UART_TX_pin = {.PIN_Port = PORTA,.PIN_Number=PIN9,.PIN_Type=ALTERNATE,.PIN_AF=AF7};
+	GPIO_CFG_t UART_RX_pin = {.PIN_Port = PORTA,.PIN_Number=PIN10,.PIN_Type=ALTERNATE,.PIN_AF=AF7};
 	MGPIO_Init( &UART_TX_pin);
 	MGPIO_Init( &UART_RX_pin);
 	UART_vInit();

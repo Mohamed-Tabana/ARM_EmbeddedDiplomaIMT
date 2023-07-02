@@ -48,20 +48,21 @@ while (1)
 	MGPIO_vSetPinType(PORTB,PIN6,OUTPUT);
 	MGPIO_vSetPinType(PORTB,PIN7,OUTPUT);
 
-//	MGPIO_vSetOutputPinType(PORTA,PIN0,PUSH_PULL);
-//	MGPIO_vSetOutputPinSpeed(PORTA,PIN0,LOW_SPEED);
+	MGPIO_vSetOutputPinType(PORTA,PIN0,PUSH_PULL);
+	MGPIO_vSetOutputPinSpeed(PORTA,PIN0,LOW_SPEED);
+	MGPIO_vSetOutputPinValue(PORTA,PIN0,OUTPUT_HIGH);
 
-for (int x=0 ;x<=99;x++)
-{
-
-	if(x==100)
-	{
-		x=0;
-	}
-	Print_MLX(x);
-    for(int i = 0; i < 1000000; i++); // Delay
-
-}
+//for (int x=0 ;x<=99;x++)
+//{
+//
+//	if(x==100)
+//	{
+//		x=0;
+//	}
+//	Print_MLX(x);
+//    for(int i = 0; i < 1000000; i++); // Delay
+//
+//}
 
 
 }

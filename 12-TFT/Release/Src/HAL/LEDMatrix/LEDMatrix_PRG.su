@@ -1,0 +1,5 @@
+../Src/HAL/LEDMatrix/LEDMatrix_PRG.c:16:6:LEDMTX_vInit	16	static
+../Src/HAL/LEDMatrix/LEDMatrix_PRG.c:28:6:LEDMTX_vClearAllColumns	16	static
+../Src/HAL/LEDMatrix/LEDMatrix_PRG.c:35:6:LEDMTX_vSetTheSpecificColumn	0	static
+../Src/HAL/LEDMatrix/LEDMatrix_PRG.c:40:6:LEDMTX_vSetTheRowsWithValue	16	static
+../Src/HAL/LEDMatrix/LEDMatrix_PRG.c:50:6:LEDMTX_vDisplayFrame	8	static

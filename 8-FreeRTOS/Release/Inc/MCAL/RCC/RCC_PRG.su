@@ -1,0 +1,15 @@
+../Inc/MCAL/RCC/RCC_PRG.c:8:6:RCC_SetCLKSTS	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:48:6:RCC_SetSYSCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:54:6:RCC_HSECONFIG	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:66:6:RCC_PLLCONFIG	12	static
+../Inc/MCAL/RCC/RCC_PRG.c:81:6:RCC_SetBusesPrescaler	12	static
+../Inc/MCAL/RCC/RCC_PRG.c:95:6:RCC_HSEBYP	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:100:6:RCC_CSSCFG	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:106:6:RCC_AHB1EnableCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:110:6:RCC_AHB1DisableCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:116:6:RCC_APB1EnableCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:121:6:RCC_APB1DisableCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:127:6:RCC_APB2EnableCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:132:6:RCC_APB2DisableCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:139:6:RCC_AHB1LPEnableCLK	0	static
+../Inc/MCAL/RCC/RCC_PRG.c:143:6:RCC_AHB1LPDisableCLK	0	static

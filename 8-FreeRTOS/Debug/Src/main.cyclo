@@ -1,0 +1,4 @@
+main.c:37:6:Task_RED0	2
+main.c:54:6:Task_BLUE1	2
+main.c:71:6:Task_LED2	2
+main.c:89:5:main	2

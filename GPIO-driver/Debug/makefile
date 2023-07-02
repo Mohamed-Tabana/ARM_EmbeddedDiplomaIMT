@@ -36,34 +36,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := GPIO-driver
+BUILD_ARTIFACT_NAME := 2-GPIO-Driver
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-GPIO-driver.elf \
+2-GPIO-Driver.elf \
 
 MAP_FILES += \
-GPIO-driver.map \
+2-GPIO-Driver.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-GPIO-driver.list \
+2-GPIO-Driver.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: GPIO-driver.elf secondary-outputs
+main-build: 2-GPIO-Driver.elf secondary-outputs
 
 # Tool invocations
-GPIO-driver.elf GPIO-driver.map: $(OBJS) $(USER_OBJS) D:\IMT_ARM\STM32F104_BlackPill\GPIO-driver\STM32F401CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "GPIO-driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\GPIO-driver\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO-driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+2-GPIO-Driver.elf 2-GPIO-Driver.map: $(OBJS) $(USER_OBJS) D:\IMT_ARM\STM32F104_BlackPill\GPIO-driver\STM32F401CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "2-GPIO-Driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\GPIO-driver\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2-GPIO-Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -72,14 +72,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-GPIO-driver.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "GPIO-driver.list"
+2-GPIO-Driver.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "2-GPIO-Driver.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) GPIO-driver.elf GPIO-driver.list GPIO-driver.map default.size.stdout
+	-$(RM) 2-GPIO-Driver.elf 2-GPIO-Driver.list 2-GPIO-Driver.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

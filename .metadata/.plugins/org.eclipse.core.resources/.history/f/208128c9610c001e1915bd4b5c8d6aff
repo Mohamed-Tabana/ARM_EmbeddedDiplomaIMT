@@ -1,8 +1,0 @@
-/*
- * TFT_prg.c
- *
- *  Created on: Jun 16, 2023
- *      Author: ALTAWKEL
- */
-
-#include "TFT_int.h"

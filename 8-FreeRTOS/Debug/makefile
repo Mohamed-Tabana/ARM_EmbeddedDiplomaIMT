@@ -10,16 +10,15 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Startup/subdir.mk
--include Src/Services/S2P/subdir.mk
--include Src/MCAL/SysTick/subdir.mk
--include Src/MCAL/RCC/subdir.mk
--include Src/MCAL/NVIC/subdir.mk
--include Src/MCAL/GPIO/subdir.mk
--include Src/MCAL/EXTI/subdir.mk
--include Src/Kernel/subdir.mk
--include Src/HAL/Segment/subdir.mk
--include Src/HAL/LEDMatrix/subdir.mk
 -include Src/subdir.mk
+-include Inc/MCAL/UART/subdir.mk
+-include Inc/MCAL/SysTick/subdir.mk
+-include Inc/MCAL/SPI/subdir.mk
+-include Inc/MCAL/RCC/subdir.mk
+-include Inc/MCAL/NVIC/subdir.mk
+-include Inc/MCAL/GPIO/subdir.mk
+-include Inc/MCAL/Flash/subdir.mk
+-include Inc/MCAL/EXTI/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -69,7 +68,7 @@ main-build: 8-FreeRTOS.elf secondary-outputs
 
 # Tool invocations
 8-FreeRTOS.elf 8-FreeRTOS.map: $(OBJS) $(USER_OBJS) D:\IMT_ARM\STM32F104_BlackPill\8-FreeRTOS\STM32F401CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "8-FreeRTOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\8-FreeRTOS\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8-FreeRTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "8-FreeRTOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\IMT_ARM\STM32F104_BlackPill\8-FreeRTOS\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8-FreeRTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

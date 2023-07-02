@@ -1,0 +1,5 @@
+TFT_prg.c:13:6:TFT_vWriteCommand	1
+TFT_prg.c:20:6:TFT_vWriteData	1
+TFT_prg.c:26:6:TFT_vTFTSequense	1
+TFT_prg.c:43:6:TFT_vInit	1
+TFT_prg.c:57:6:TFT_vDisplay	2

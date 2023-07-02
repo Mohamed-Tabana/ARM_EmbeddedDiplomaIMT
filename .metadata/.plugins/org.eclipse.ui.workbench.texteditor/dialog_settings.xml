@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="RX_Buffer"/>
+		<item key="selection" value="Author: TABANA"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Author: ALTAWKEL"/>
+			<item value="ALTAWKEL"/>
+			<item value="MSTK_vSetBusyWait"/>
 			<item value="RX_Buffer"/>
 			<item value="A_pu16Data"/>
 			<item value="A_u16Length"/>
@@ -20,11 +23,10 @@
 			<item value="|"/>
 			<item value="copy_GPIO_ODR"/>
 			<item value="Local_u8firstTimeFlag"/>
-			<item value="Local_u8counter"/>
-			<item value="copy_u32numer"/>
-			<item value="MGPIO_vSetOutputPortValue"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Author: TABANA"/>
+			<item value="MSTK_vSetBusyWaitms"/>
 			<item value="copy_pu16Data"/>
 			<item value="copy_u32Size"/>
 			<item value="copy_u32Address"/>
@@ -38,8 +40,6 @@
 			<item value="255"/>
 			<item value="0"/>
 			<item value="_"/>
-			<item value="copy_u8"/>
-			<item value="u8"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="D:\IMT_ARM\STM32F104_BlackPill\14-Bootloader\Src\MCAL\UART"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="D:\IMT_ARM\STM32F104_BlackPill\8-FreeRTOS\Inc\MCAL\UART"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="ALTAWKEL"/>
+		</list>
 	</section>
 	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
 		<item key="DIALOG_X_ORIGIN" value="706"/>

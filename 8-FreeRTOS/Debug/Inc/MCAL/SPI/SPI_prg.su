@@ -1,0 +1,2 @@
+../Inc/MCAL/SPI/SPI_prg.c:6:6:SPI_vInit	48	static
+../Inc/MCAL/SPI/SPI_prg.c:62:9:SPI_Transceiving	24	static,ignoring_inline_asm

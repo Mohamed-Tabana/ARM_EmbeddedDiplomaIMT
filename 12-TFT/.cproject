@@ -134,6 +134,24 @@
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.1464621309" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../Inc"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\App&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\Services\S2P&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\HAL\DAC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\HAL\IR&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\HAL\LEDMatrix&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\HAL\Segment&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\HAL\TFT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\Kernel&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\EXTI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\Flash&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\GPIO&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\NVIC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\RCC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\SPI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\SysTick&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\MCAL\UART&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\IMT_ARM\STM32F104_BlackPill\12-TFT\Src\Services&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.598431234" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

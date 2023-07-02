@@ -16,42 +16,95 @@
  ******************************************************************************
  */
 
+
 #include <stdint.h>
-// delay
-/*
- * busy wait
- * SYSTICK
- * OS Delay -> Multi-tasking
- * executes another tasks during it
- * */
-void Task_LED1(void* pvParameters)
+#include "stdio.h"
+#include "RCC_Interface.h"
+#include "GPIO_Interface.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "semphr.h"
+GPIO_CFG_t pin_arr[3]=
+{
+		{.PIN_Port=PORTA,.PIN_Number=PIN0,.PIN_Type=OUTPUT,.PIN_OSpeed=LOW_SPEED,.PIN_OType=PUSH_PULL},
+		{.PIN_Port=PORTA,.PIN_Number=PIN1,.PIN_Type=OUTPUT,.PIN_OSpeed=LOW_SPEED,.PIN_OType=PUSH_PULL},
+		{.PIN_Port=PORTA,.PIN_Number=PIN2,.PIN_Type=OUTPUT,.PIN_OSpeed=LOW_SPEED,.PIN_OType=PUSH_PULL}
+};
+
+xSemaphoreHandle rgbSem ;
+BaseType_t rgbsemStatus;
+
+void Task_RED0(void* pvParams)
 {
 	while(1)
 	{
-		TOGGLE_BIT(REG,BIT) ;
-		/*OS Delay*/
+		vTaskDelay(500);
+
+		rgbsemStatus=xSemaphoreTake(rgbSem,600);
+		if(rgbsemStatus==pdPASS)
+		{
+
+			MGPIO_vToggleOutputPinValue(pin_arr[0].PIN_Port,pin_arr[0].PIN_Number);
+			xSemaphoreGive(rgbSem);
+
+		}
 
 	}
 }
-void Task_LED2(void* pvParameters)
+void Task_BLUE1(void* pvParams)
 {
 	while(1)
 	{
+		vTaskDelay(1000);
+		rgbsemStatus=xSemaphoreTake(rgbSem,800);
+		if(rgbsemStatus==pdPASS)
+		{
+			MGPIO_vToggleOutputPinValue(pin_arr[1].PIN_Port,pin_arr[1].PIN_Number);
+
+			xSemaphoreGive(rgbSem);
+
+		}
+
 
 	}
-
 }
-void Task_LED3(void* pvParameters)
+void Task_LED2(void* pvParams)
 {
 	while(1)
 	{
+		vTaskDelay(1500);
+
+		rgbsemStatus=xSemaphoreTake(rgbSem,800);
+		if(rgbsemStatus==pdPASS)
+		{
+			MGPIO_vToggleOutputPinValue(pin_arr[2].PIN_Port,pin_arr[2].PIN_Number);
+
+			xSemaphoreGive(rgbSem);
+
+		}
+
 
 	}
-
 }
-
 int main(void)
 {
-    /* Loop forever */
+
+	vSemaphoreCreateBinary(rgbSem);
+	MGPIO_Init( &pin_arr[0]);
+	MGPIO_Init( &pin_arr[1]);
+	MGPIO_Init( &pin_arr[2]);
+	//	 vTaskDelay(2000);
+		 MGPIO_vSetOutputPinValue(pin_arr[0].PIN_Port,pin_arr[0].PIN_Number,OUTPUT_HIGH);
+		 MGPIO_vSetOutputPinValue(pin_arr[1].PIN_Port,pin_arr[1].PIN_Number,OUTPUT_HIGH);
+
+	xTaskCreate(Task_RED0,NULL,65,NULL,1,NULL);
+	xTaskCreate(Task_BLUE1,NULL,65,NULL,2,NULL);
+	xTaskCreate(Task_LED2,NULL,65,NULL,3,NULL);
+
+
+	vTaskStartScheduler();
+
+
+	/* Loop forever */
 	for(;;);
 }

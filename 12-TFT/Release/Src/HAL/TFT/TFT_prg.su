@@ -1,0 +1,5 @@
+../Src/HAL/TFT/TFT_prg.c:13:6:TFT_vWriteCommand	8	static
+../Src/HAL/TFT/TFT_prg.c:20:6:TFT_vWriteData	8	static
+../Src/HAL/TFT/TFT_prg.c:26:6:TFT_vTFTSequense	8	static
+../Src/HAL/TFT/TFT_prg.c:43:6:TFT_vInit	8	static
+../Src/HAL/TFT/TFT_prg.c:57:6:TFT_vDisplay	16	static

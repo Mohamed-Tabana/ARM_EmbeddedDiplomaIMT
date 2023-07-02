@@ -163,15 +163,6 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.920439748;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.920439748.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.930652768;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.884111025">
-			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1762583242;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1762583242.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1520120987;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1277958681">
-			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-	</storageModule>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Debug">
 			<resource resourceType="PROJECT" workspacePath="/GPIO-driver"/>
@@ -180,4 +171,5 @@
 			<resource resourceType="PROJECT" workspacePath="/GPIO-driver"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="scannerConfiguration"/>
 </cproject>
