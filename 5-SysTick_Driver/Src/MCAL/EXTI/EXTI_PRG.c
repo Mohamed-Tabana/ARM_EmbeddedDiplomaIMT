@@ -12,14 +12,11 @@ void EXTI0_IRQHandler(void)
 {
 	//if (Global_EXTICallBack[0] != NULL)
 	Global_EXTICallBack[0]();
-	SET_BIT(MEXTI->EXTI_PR,EXTI_LINE_0);
 }
 void EXTI1_IRQHandler(void)
 {
 //	if (Global_EXTICallBack[1] != NULL)
 	Global_EXTICallBack[1]();
-	SET_BIT(MEXTI->EXTI_PR,EXTI_LINE_1);
-
 }
 
 //TODO do this for all 16 Line

@@ -71,8 +71,8 @@ void MEXTI_vClearInterruptTrigger(EXTI_Line_t copy_eEXTI_Line)
 }
 void MEXTI_vSetEXTI_LineOnPort(EXTI_Line_t copy_eEXTI_Line,EXTI_EXTIPortCFG_t copy_eEXTI_EXTIPortCFG)
 {
-	MSYSCFG->SYSCFG_EXTICR[copy_eEXTI_Line/4] &= ~( 0b1111<<copy_eEXTI_Line%4);
-	MSYSCFG->SYSCFG_EXTICR[copy_eEXTI_Line/4] |= copy_eEXTI_EXTIPortCFG<<copy_eEXTI_Line%4;
+	MSYSCFG->SYSCFG_EXTICR[copy_eEXTI_Line/4] &= ~( 0b1111<<((copy_eEXTI_Line%4)*4));
+	MSYSCFG->SYSCFG_EXTICR[copy_eEXTI_Line/4] |= copy_eEXTI_EXTIPortCFG<<((copy_eEXTI_Line%4)*4);
 
 }
 void MEXTI_vSetCallBack(EXTI_Line_t copy_eEXTI_Line,EXTI_Callback_t copy_EXTI_Callback)

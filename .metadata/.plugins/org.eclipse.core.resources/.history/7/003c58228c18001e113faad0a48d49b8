@@ -99,7 +99,7 @@ int main(void)
 
 	xTaskCreate(Task_RED0,NULL,65,NULL,1,NULL);
 	xTaskCreate(Task_BLUE1,NULL,65,NULL,2,NULL);
-//	xTaskCreate(Task_LED2,NULL,65,NULL,3,NULL);
+	xTaskCreate(Task_LED2,NULL,65,NULL,3,NULL);
 
 
 	vTaskStartScheduler();
